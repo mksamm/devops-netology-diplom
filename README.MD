@@ -176,9 +176,9 @@ ___
 
 ## Ссылки на ansible и terraform 
 
-- [ansible](https://github.com/mksamm/DIPLOM/tree/main/src/ansible)
+- [ansible](https://github.com/mksamm/devops-netology-diplom/tree/master/src/ansible)
 
-- [terraform](https://github.com/mksamm/DIPLOM/tree/main/src/terraform)
+- [terraform](https://github.com/mksamm/devops-netology-diplom/tree/master/src/terraform)
 
-- [pipeline](https://github.com/mksamm/DIPLOM/blob/main/src/gitlab-ci.yml)
+- [pipeline](https://github.com/mksamm/devops-netology-diplom/blob/master/src/gitlab-ci.yml)
 
