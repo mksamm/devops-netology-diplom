@@ -152,6 +152,8 @@ mysql> SHOW REPLICA STATUS\G;
 
 ![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2018.48.59.png)
 
+### 7. Настроить CI/CD для автоматического развёртывания приложения.
+
 Проверка работы пайплайна:
 
 ![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2018.47.24.png)
@@ -164,7 +166,7 @@ ___
 
 ![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2018.47.39.png)
 
-### 7.Установка Prometheus, Alert Manager, Node Exporter и Grafana
+### 8.Установка Prometheus, Alert Manager, Node Exporter и Grafana
 
 Для данной задачи созданы роли node-exporter, prometheus, alertmanager, и grafana
 
