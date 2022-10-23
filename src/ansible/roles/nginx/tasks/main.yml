@@ -1,0 +1,59 @@
+---
+# tasks file for nginx
+
+- name: Installing tools
+  apt:
+    package: ['certbot', 'python3-certbot-nginx', 'nginx']
+    state: present
+    update_cache: yes
+
+#- name: restart nginx
+#  become: true
+#  systemd:
+#    name: nginx
+#    state: restarted
+#    enabled: yes
+#    daemon_reload: yes
+
+#- name: delete config
+#  shell: rm /etc/nginx/sites-available/default
+
+- name: Copy https config
+  become: true
+  template:
+    src: templates/https.j2
+    dest: /etc/nginx/sites-available/https
+
+- name: Create a symbolic link
+  become: true
+  file:
+    src: /etc/nginx/sites-available/https
+    dest: /etc/nginx/sites-enabled/https
+    state: link
+    force: yes
+
+- name: restart nginx
+  become: true
+  systemd:
+    name: nginx
+    state: restarted
+    enabled: yes
+    daemon_reload: yes
+- name: get test/stage cert add --test-cert for use test certificate
+  become: true
+  shell: >
+    certbot --nginx  -d {{ domain }} -d www.{{ domain }} -d gitlab.{{ domain }} -d grafana.{{ domain }} -d alertmanager.{{ domain }} -d prometheus.{{ domain }}
+    --email scaryck@gmail.com --expand --redirect --agree-tos  --non-interactive
+
+- name: restart nginx
+  become: true
+  systemd:
+    name: nginx
+    state: restarted
+    enabled: yes
+    daemon_reload: yes
+
+- name: Wait
+  ansible.builtin.wait_for:
+    timeout: 10
+  delegate_to: localhost

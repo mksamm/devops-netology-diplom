@@ -1,0 +1,11 @@
+
+---
+# defaults file for runner
+gitlab_runner_token: "wordpress"
+domain: "maksam.ru"
+gitlab_runner_package_name: "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh"
+gitlab_runner_repository_file: "/etc/apt/sources.list.d/runner_gitlab-runner.list"
+gitlab_url: "http://gitlab.{{ domain }}.ru"
+token: "wordpress" 
+gitlab_runner_executor: docker
+gitlab_runner_docker_image: "ubuntu:latest"

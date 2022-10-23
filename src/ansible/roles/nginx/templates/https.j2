@@ -1,0 +1,99 @@
+
+server {
+  listen                80;
+  server_name           {{ domain }} www.{{ domain }};
+
+  return 301 https://{{ domain }}$request_uri;
+}
+
+server {
+  listen               443 ssl;
+  server_name          {{ domain }} www.{{ domain }};
+  location / {
+    proxy_pass         http://app.{{ domain }}:80;
+    proxy_http_version 1.1;
+    proxy_buffering off;
+    proxy_read_timeout    90;
+    proxy_connect_timeout 90;
+    proxy_redirect        off;
+    proxy_set_header Host $host;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Proto https;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Port 443;
+    proxy_set_header Proxy "";
+   
+  }
+
+}
+server {
+    listen 80;
+    listen [::]:80;
+    server_name www.gitlab.{{ domain }} gitlab.{{ domain }};
+    return 301 https://gitlab.{{ domain }}$request_uri; 
+}
+server {
+  listen          443 ssl;
+  server_name     gitlab.{{ domain }};
+
+  location / {
+    proxy_set_header   Host $host:$server_port;
+    proxy_set_header   X-Real-IP $remote_addr;
+    proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header   X-Forwarded-Proto $scheme;
+    proxy_pass         http://gitlab.{{ domain }}:80;
+  }
+}
+server {
+    listen 80;
+    listen [::]:80;
+    server_name www.grafana.{{ domain }} grafana{{ domain }};
+    return 301 https://grafana.{{ domain }}$request_uri;
+}
+server {
+  listen          443 ssl;
+  server_name     grafana.{{ domain }};
+
+  location / {
+    proxy_set_header   Host $host:$server_port;
+    proxy_set_header   X-Real-IP $remote_addr;
+    proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header   X-Forwarded-Proto $scheme;
+    proxy_pass         http://monitoring.{{ domain }}:3000;
+  }
+}
+server {
+    listen 80;
+    listen [::]:80;
+    server_name www.prometheus.{{ domain }} prometheus.{{ domain }};
+    return 301 https://prometheus.{{ domain }}$request_uri;
+}
+server {
+  listen          443 ssl;
+  server_name     prometheus.{{ domain }};
+  location / {
+    proxy_set_header   Host $host:$server_port;
+    proxy_set_header   X-Real-IP $remote_addr;
+    proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header   X-Forwarded-Proto $scheme;
+    proxy_pass         http://monitoring.{{ domain }}:9090;
+  }
+}
+server {
+    listen 80;
+    listen [::]:80;
+    server_name alertmanager.{{ domain }} alertmanager.{{ domain }};
+    return 301 https://alertmanager.{{ domain }}$request_uri;
+}
+server {
+  listen          443 ssl;
+  server_name     alertmanager.{{ domain }};
+  location / {
+    proxy_set_header   Host $host:$server_port;
+    proxy_set_header   X-Real-IP $remote_addr;
+    proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header   X-Forwarded-Proto $scheme;
+    proxy_pass         http://monitoring.{{ domain }}:9093;
+  }
+}
