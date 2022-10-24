@@ -156,25 +156,25 @@ mysql> SHOW REPLICA STATUS\G;
 
 Проверка работы пайплайна:
 
-![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2018.47.24.png)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2018.47.24.png)
 
 ___
 
-![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2020.00.22.png)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2020.00.22.png)
 
 Проверим изменения на сайте WordPres:
 
-![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2018.47.39.png)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2018.47.39.png)
 
 ### 8.Установка Prometheus, Alert Manager, Node Exporter и Grafana
 
 Для данной задачи созданы роли node-exporter, prometheus, alertmanager, и grafana
 
-![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2018.48.41.png)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-23%20%D0%B2%2018.48.41.png)
 
-![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/diplom1200.jpg)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/diplom1200.jpg)
 
-![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/diplom7.PNG)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/diplom7.PNG)
 
 ## Ссылки на ansible и terraform 
 
