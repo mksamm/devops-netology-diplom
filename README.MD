@@ -64,7 +64,7 @@ $ terraform apply
 
 `ansible-playbook nginx.yml -i inventory/inventory.yml`
 
-![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/diplom6.PNG)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.19.33.png)
 ___
 
 Просмотр сертификатов:
@@ -142,7 +142,9 @@ mysql> SHOW REPLICA STATUS\G;
 
 `ansible-playbook wordpress.yml -i inventory/inventory.yml`
 
-![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/Diplom9.PNG)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.26.47.png)
+
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.26.55.png)
 
 ### 6.Установка Gitlab CE и Gitlab Runner
 
