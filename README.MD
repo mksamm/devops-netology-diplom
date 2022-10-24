@@ -23,9 +23,9 @@ E-mail: scaryck@gmail.com
 
 Настроены DNS:
 
-![img.png](https://github.com/mksamm/devops-netology-diplom/blob/main/images/diplom.PNG)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/diplom.PNG)
 
-![img.png](https://github.com/mksamm/devops-netology-diplom/blob/main/images/dns.jpg)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/dns.jpg)
 
 ### 2.Создание инфраструктуры
 
