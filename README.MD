@@ -52,11 +52,11 @@ $ terraform apply
 ```
 Создан S3 bucket в YC.
 
-![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/bucket.jpg)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/bucket.jpg)
 
 Подготовлена инфраструктура с помощью Terraform на базе облачного провайдера YandexCloud.
 
-![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0.jpg)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0.jpg)
 
 ### 3. Установка Nginx и LetsEncrypt
 
@@ -64,7 +64,7 @@ $ terraform apply
 
 `ansible-playbook nginx.yml -i inventory/inventory.yml`
 
-![img.png](https://github.com/mksamm/DIPLOM/blob/main/images/diplom6.PNG)
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/diplom6.PNG)
 ___
 
 Просмотр сертификатов:
