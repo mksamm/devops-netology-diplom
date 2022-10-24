@@ -184,3 +184,31 @@ ___
 
 - [pipeline](https://github.com/mksamm/devops-netology-diplom/blob/master/src/gitlab-ci.yml)
 
+## Доработка дипломного проекта
+
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.32.36.png) 
+
+Скриншоты веб-интерфейсов всех сервисов работающих по HTTPS на вашем доменном имени.
+
+https://www.you.domain (WordPress)
+
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.31.01.png)
+
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.31.10.png)
+
+https://gitlab.you.domain (Gitlab)
+
+
+https://grafana.you.domain (Grafana)
+
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.36.50.png)
+
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.37.00.png)
+
+https://prometheus.you.domain (Prometheus)
+
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.53.51.png)
+
+https://alertmanager.you.domain (Alert Manager)
+
+![img.png](https://github.com/mksamm/devops-netology-diplom/blob/master/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202022-10-24%20%D0%B2%2021.58.34.png)
